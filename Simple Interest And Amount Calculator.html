@@ -1,0 +1,106 @@
+<!--
+<html>
+    <head><title>Simple Interest And Amount Calculator</title></head>
+    <script>
+        function si(){
+        var principal1 = document.getElementById("principal").value;
+        var rate1 = document.getElementById("rate").value;
+        var time1 = document.getElementById("time").value;
+        
+        var simpleInterest = (parseFloat(principal1)*parseFloat(rate1)*parseFloat(time1))/100
+        
+        document.getElementById("si").value = simpleInterest;
+        }
+    
+    </script>
+    
+    
+    <body bgColor= "#fcfcd9">
+        <p>Welcome To Simple Interest And Amount Calculator</p>
+        
+        <form>
+            Enter the Principal:&nbsp<input type = "text" id = "principal" ><br><br>
+            Enter the Rate:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type = "text" id = "rate"><br><br>
+            Enter the Time:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "text" id = "time"><br><br>
+        
+            <input type="button"  value="Calculate Simple Interest" onClick="si()"><br><br>
+            
+            
+            
+           The Simple Interest is : &nbsp
+            <input type="text" id="si" readonly>
+        
+        
+        
+        
+        
+        
+        </form>
+    
+    
+    
+    
+    
+    
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>-->
+
+<html>
+<head><title>Simple Interest And Amount Calculator</title></head>
+    
+    <script>
+        function si(){
+            var p = document.getElementById("principal").value;
+            var r = document.getElementById("rate").value;
+            var t = document.getElementById("time").value;
+            
+            var simpleInterest = (parseFloat(p)*parseFloat(r)*parseFloat(t))/100
+            document.getElementById("si1").value= simpleInterest;
+            
+            var amount = parseFloat(simpleInterest)+parseFloat(p);
+            document.getElementById("amount").value = amount;
+        }
+    
+    </script>
+    <body bgColor="#f7f6e1">
+        
+        <form>
+            Enter the Principal :  <input type="text" id ="principal"><br><br>
+            
+            Enter the Rate : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "text" id = "rate"><br><br>
+            Enter the Time : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "text" id = "time"><br><br>
+            
+            <input type="button" value="Calculate Simple Interest" onClick="si()" readonly>
+            <br><br>
+            Simple Interest : &nbsp&nbsp&nbsp&nbsp&nbsp<input type = "text" id = "si1"><br><br>
+            
+            
+            Total Amount: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "text" id = "amount" readonly>
+        
+        
+        
+        
+        </form>
+    
+    
+    
+    
+    
+    </body>
+
+
+
+
+</html>
